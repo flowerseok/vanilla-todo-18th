@@ -1,0 +1,110 @@
+main {
+    display : flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+
+h1 {
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section.input {
+    display : flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+#todo-input{
+    width: 240px;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 18px;
+}
+#todo-input:focus{
+    border-color: #007bff;
+}
+button {
+    width: 90px;
+    padding: 13px;
+    margin-left: 25px;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 18px;
+}
+
+button:hover {
+    background-color: #FF2D00;
+}
+
+section.Todo ul ,section.Done ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end; 
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ffffff;
+    
+     
+}
+section.Todo, section.Done {
+    display: flex;
+    flex-direction: column; 
+    min-height: 152px; 
+    max-height: 152px ;
+    /* align-items:flex-start; */
+    overflow-y: auto;
+}
+.delete-button {
+    background-color: #FFB6C1; 
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    padding: 6px 5px;
+    width: 60px; 
+    font-size: 14px; 
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(255,182,193, 0.2);
+    margin-right: 5px; 
+}
+
+.delete-button:hover {
+    background-color: #FF69B4;  
+    box-shadow: 0 4px 10px rgba(255,105,180, 0.4); 
+    
+}
+
+
+.delete-button:active {
+    transform: scale(1);
+    box-shadow: 0 4px 10px rgba(255,105,180, 0.2); 
+}
+
+
+.todo-item-text {  
+    flex: 1;  
+    min-width: 0;  
+}

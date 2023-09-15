@@ -3,12 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla Todo</title>
+    <title>SongSeok Todo</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" sizes="120x120" href="tiger.png" />
   </head>
 
   <body>
-    <div class="container"></div>
+    <main>
+    <h1>할 일</h1>
+    <section class="input"> 
+      <form id="enter-todo">
+        <input type="text" id="todo-input" placeholder="Add here">
+        <button type="button" id="add-button">Add</button>
+      </form>
+    </section>
+  <h2>To do</h2>
+    <section class="Todo">
+      
+      <ul id="todo-list"></ul>
+    </section>
+  <h2>Done</h2>
+    <section class="Done">
+    
+      <ul id="done-list"></ul>
+    </section>
+    </main>
   </body>
   <script src="script.js"></script>
 </html>
