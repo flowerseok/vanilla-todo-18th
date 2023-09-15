@@ -10,7 +10,10 @@ main {
     border-radius: 15px;
 }
 
-
+form{
+    display: flex;
+    align-items: center;
+}
 h1 {
     font-size: 35px;
     color: #000000;
@@ -75,7 +78,6 @@ section.Todo, section.Done {
     flex-direction: column; 
     min-height: 152px; 
     max-height: 152px ;
-    /* align-items:flex-start; */
     overflow-y: auto;
 }
 .delete-button {
